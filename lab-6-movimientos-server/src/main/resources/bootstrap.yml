@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: istmov
+  cloud:
+    config:
+      enabled: true
+      discovery:
+        enabled: true
+        serviceId: SENTENCE-CONFIG
+
+
+server:
+  port: 8007
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8011/eureka/ 
